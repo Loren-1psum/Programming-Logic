@@ -1,0 +1,14 @@
+    body {
+        text-align: center;
+    }
+
+    .botoes {
+
+        border: 4px black;
+        border-radius: 4px ;
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        color: black;
+        background-color: azure;
+    }
