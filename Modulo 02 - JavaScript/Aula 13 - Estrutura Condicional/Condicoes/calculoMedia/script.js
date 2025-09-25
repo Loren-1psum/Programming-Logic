@@ -11,23 +11,24 @@ function calcularMedia(){
         resultado.innerHTML = "DIGITE NOTAS MENORES QUE 10"
         resultado.style.color = "red"
 
-    } else if (nota1 < 0 || nota2 < 0 || nota3 < 0)
-        resultado.innerHTML = "DIGITE NOTAS MENORES QUE 10"
+    } else if (nota1 < 0 || nota2 < 0 || nota3 < 0) {
+        resultado.innerHTML = "DIGITE NOTAS MAIORES QUE 0"
         resultado.style.color = "red"
         
-    } else if (isNaN (nota1) || isNaN(nota3) || isNaN(nota3)){
+    } else if (isNaN (nota1) || isNaN(nota3) || isNaN(nota3)) {
         resultado.innerHTML = "PREENCHA TODOS OS CAMPOS"
         resultado.style.color = "red"
 
     } else if (media >= 7) {
-        resultado.innerHTML = "APROVADO"
+        resultado.innerHTML = "APROVADO <br> a sua média foi de " + media
         resultado.style.color = "green"
 
     } else if (media >= 5) {
-        resultado.innerHTML = "RECUPERAÇÃO"
+        resultado.innerHTML = "RECUPERAÇÃO <br> a sua média foi de " + media
         resultado.style.color = "orange"
 
     } else {
-        resultado.innerHTML = "REPROVADO"
+        resultado.innerHTML = "REPROVADO <br> a sua média foi de " + media
         resultado.style.color = "red"
     }
+}
