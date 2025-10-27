@@ -1,0 +1,86 @@
+/* LEMBRAR QUE "." ANTES DO NOME REPRESENTA CLASSES */
+
+/* Fonte e margem, não sei o que escrever aqui, é só isso */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+
+  /* Div centralizada horizontal */
+  display: flex;
+  justify-content: center;
+}
+
+/* Container centro e larguras */
+.container {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Logo centro e margin embaixo, largura e altura */
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 168px;
+  height: 91px;
+}
+
+label {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+}
+
+/* Larguras dos inputs, padding e margem a direita  */
+input[type="text"], input[type="number"] {
+  padding: 5px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+/* Padding e margem dos botões  */
+button {
+  margin: 5px 5px 15px 0;
+  padding: 5px 10px;
+}
+
+/* Padding dos elementos ul a esquerda
+("UL" significa "Unordered List", ou lista não ordenada)  */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Padding, margem na parte inferior, raio da borda, e peso da fonte em negrito para elementos li
+("LI" Significa "List Item", que eu acho que é traduzido como "Listar Item")  */
+li {
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Estilo campo dos aprovados  */
+.aprovado {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Estilo campo dos reprovados */
+.reprovado {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Rodapé dados (muita coisa kkkk) */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+}
