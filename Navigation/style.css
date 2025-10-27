@@ -1,14 +1,92 @@
-    body {
-        text-align: center;
-    }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
 
-    .botoes {
+header {
+  background-color: #004080;
+  color: white;
+  padding: 15px 20px;
+}
 
-        border: 4px black;
-        border-radius: 4px ;
-        display: block;
-        width: 90%;
-        margin: 10px auto;
-        color: black;
-        background-color: azure;
-    }
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  background: white;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #00264d;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+}
+
+/* Estilo para as caixas dos projetos pessoais */
+main section article {
+  background-color: #e6f0ff;
+  border: 1px solid #004080;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 5px rgba(0, 64, 128, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+main section article:hover {
+  box-shadow: 1px 4px 10px rgba(0, 64, 128, 0.4);
+}
+
+main section article h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+main section article p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #333;
+}
+
+main section article a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+main section article a:hover {
+  background-color: #0059b3;
+}
