@@ -10,7 +10,9 @@ function atualizarLista(alunosExibidos) {
   listaAlunos.innerHTML = '';
   
   alunosExibidos.forEach(aluno => {
+
     const li = document.createElement('li');
+
     // Observação: Notei que o toFixed arredonda, mas o código não percebe que o valor foi arredondado,
     // Por exemplo: se for digitado 6.99, a nota será considerada vermelha, mas aparecerá 7.0 no output do site, sendo que 7.0 é nota verde.
     li.textContent = `${aluno.nome} - Nota: ${aluno.nota.toFixed(1)}`;
@@ -50,6 +52,7 @@ document.getElementById('btnCadastrar').addEventListener('click', () => {
 
 
 // Filtra os alunos aprovados
+
 document.getElementById('btnFiltrarAprovados').addEventListener('click', () => {
 
   const aprovados = alunos.filter(aluno => aluno.nota >= 7);
@@ -59,6 +62,7 @@ document.getElementById('btnFiltrarAprovados').addEventListener('click', () => {
 
 
 // Mostra todos os alunos
+
 document.getElementById('btnMostrarTodos').addEventListener('click', () => {
 
   atualizarLista(alunos);

@@ -3,63 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projetos Pessoais - Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfólio - Projetos Pessoais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Meu Portfólio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="curriculo.html">Currículo</a>
-      <a href="projetos-pessoais.html">Projetos Pessoais</a>
-      <a href="certificados.html">Certificados</a>
+    <nav class="navbar">
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="curriculo.html" class="nav-link">Currículo</a></li>
+        <li><a href="projetos-pessoais.html" class="nav-link active">Projetos Pessoais</a></li>
+        <li><a href="certificados.html" class="nav-link">Certificados</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <h2>Projetos Pessoais</h2>
-      
-      <article>
-        <h3>Atividade Receita de Bolo</h3>
-        <p>Atividade realizada em aula para criação de página HTML com CSS.</p>
-        <a href="../Modulo 01 - HTML e CSS/Aula 07 - Criando uma Página - HTML e CSS/index.html" target="_blank">Ver Projeto</a>
-      </article>
 
-      <article>
-        <h3>Tabela Brasileirão</h3>
-        <p>Atividade em que montamos uma tabela, apresentada em aula.</p>
-        <a href="../Modulo 01 - HTML e CSS/Aula 08 - Tabelas e Formulários/Tabela/index.html" target="_blank">Ver Projeto</a>
-      </article>
+  <main class="container">
 
-      <article>
-        <h3>Atividade Formulário</h3>
-        <p>Atividade para montar formulário desenvolvido durante as aulas.</p>
-        <a href="../Modulo 01 - HTML e CSS/Aula 08 - Tabelas e Formulários/Formulário/index.html" target="_blank">Ver Projeto</a>
-      </article>
+    <header>
+      <h1 class="fade-in">Projetos Pessoais</h1>
+      <p class="page-subtitle">Meus projetos, tanto pessoais, quanto realizados em classe (No momento, principalmente os feitos em classe).</p>
+    </header>
 
-      <article>
-        <h3>Desafio Mostra e Esconde Parágrafo</h3>
-        <p>Desafio JavaScript com manipulação do DOM para mostrar e esconder parágrafos.</p>
-        <a href="../Modulo 02 - JavaScript/Aula 12 - Eventos DOM e Condições/desafio/desafio02.html" target="_blank">Ver Projeto</a>
-      </article>
+    <article class="project-card fade-in">
+      <h3>Atividade Receita de Bolo</h3>
+      <p>Atividade realizada em aula para criação de página HTML com CSS.</p>
+      <a href="../Modulo 01 - HTML e CSS/Aula 07 - Criando uma Página - HTML e CSS/index.html" target="_blank" class="btn-primary">Ver Projeto</a>
+    </article>
 
-      <article>
-        <h3>Desafio calculadora de média e soma em JavaScript</h3>
-        <p>Exercício de JavaScript para soma e cálculo de média.</p>
-        <a href="../Modulo 02 - JavaScript/Aula 12 - Eventos DOM e Condições/desafio/desafio01.html" target="_blank">Ver Projeto</a>
-      </article>
+    <article class="project-card fade-in">
+      <h3>Tabela Brasileirão</h3>
+      <p>Atividade em que montamos uma tabela, apresentada em aula.</p>
+      <a href="../Modulo 01 - HTML e CSS/Aula 08 - Tabelas e Formulários/Tabela/index.html" target="_blank" class="btn-primary">Ver Projeto</a>
+    </article>
 
-      <article>
-        <h3>Desafio DOM</h3>
-        <p>Desafio utilizando de manipulação do DOM, arrays, objetos, condições e repetição em javascript (Este projeto registra notas de alunos, mostra quem está na média e quem está fora, e lista todos os aprovados separadamente).</p>
-        <a href="../Modulo 02 - JavaScript/Aula 15 - Desafio DOM/index.html" target="_blank">Ver Projeto</a>
-      </article>
+    <article class="project-card fade-in">
+      <h3>Atividade Formulário</h3>
+      <p>Atividade para montar formulário desenvolvido durante as aulas.</p>
+      <a href="../Modulo 01 - HTML e CSS/Aula 08 - Tabelas e Formulários/Formulário/index.html" target="_blank" class="btn-primary">Ver Projeto</a>
+    </article>
 
-    </section>
+    <article class="project-card fade-in">
+      <h3>Desafio Mostra e Esconde Parágrafo</h3>
+      <p>Desafio JavaScript com manipulação do DOM para mostrar e esconder parágrafos.</p>
+      <a href="../Modulo 02 - JavaScript/Aula 12 - Eventos DOM e Condições/desafio/desafio02.html" target="_blank" class="btn-primary">Ver Projeto</a>
+    </article>
+
+    <article class="project-card fade-in">
+      <h3>Desafio calculadora de média e soma em JavaScript</h3>
+      <p>Exercício de JavaScript para soma e cálculo de média.</p>
+      <a href="../Modulo 02 - JavaScript/Aula 12 - Eventos DOM e Condições/desafio/desafio01.html" target="_blank" class="btn-primary">Ver Projeto</a>
+    </article>
+
+    <article class="project-card fade-in">
+      <h3>Desafio DOM</h3>
+      <p>Desafio utilizando manipulação do DOM, arrays, objetos, condições e repetição em JavaScript (Este projeto registra notas de alunos, mostra quem está na média e quem está fora, e lista todos os aprovados separadamente).</p>
+      <a href="../Modulo 02 - JavaScript/Aula 15 - Desafio DOM/index.html" target="_blank" class="btn-primary">Ver Projeto</a>
+    </article>
+
   </main>
+
   <footer>
-    <p>© 2025 Meu Nome</p>
+    <p>© 2025 Caio Loren. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

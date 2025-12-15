@@ -3,31 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Certificados - Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfólio - Certificados</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="pagina-certificados">
   <header>
-    <h1>Meu Portfólio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="curriculo.html">Currículo</a>
-      <a href="projetos-pessoais.html">Projetos Pessoais</a>
-      <a href="certificados.html">Certificados</a>
+    <nav class="navbar">
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="curriculo.html" class="nav-link">Currículo</a></li>
+        <li><a href="projetos-pessoais.html" class="nav-link">Projetos Pessoais</a></li>
+        <li><a href="certificados.html" class="nav-link active">Certificados</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <h2>Certificados e Conquistas</h2>
-      <ul>
-        <li>Certificado Lorem Ipsum - Instituição ABC</li>
-        <li>Certificado Dolor Sit Amet - Instituição XYZ</li>
-        <li>Conquista Lorem Ipsum - Evento 123</li>
-      </ul>
-    </section>
+
+  <main class="container fade-in">
+    
+    <header>
+      <h1>Certificados</h1>
+      <p class="page-subtitle">No momento nenhum, então deixei placeholders com Lorem Ipsum para preencher espaço.</p>
+    </header>
+
+    <!-- Cartão 1 -->
+    <article class="certificado-card">
+      <img src="imagens/certificado/Certificate.jpg" alt="Certificado 1" class="certificado-img" />
+      <div class="certificado-texto">
+        <h3>Certificado 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </article>
+
+    <!-- Cartão 2 -->
+    <article class="certificado-card">
+      <img src="imagens/certificado/Certificate.jpg" alt="Certificado 2" class="certificado-img" />
+      <div class="certificado-texto">
+        <h3>Certificado 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </article>
+
+    <!-- Cartão 3 -->
+    <article class="certificado-card">
+      <img src="imagens/certificado/Certificate.jpg" alt="Certificado 3" class="certificado-img" />
+      <div class="certificado-texto">
+        <h3>Certificado 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </article>
   </main>
+
   <footer>
-    <p>© 2025 Meu Nome</p>
+    <p>© 2025 Caio Loren. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

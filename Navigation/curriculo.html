@@ -3,35 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Currículo - Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfólio - Currículo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Cabeçalho fixo só com o menu -->
   <header>
-    <h1>Meu Portfólio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="curriculo.html">Currículo</a>
-      <a href="projetos-pessoais.html">Projetos Pessoais</a>
-      <a href="certificados.html">Certificados</a>
+    <nav class="navbar">
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="curriculo.html" class="nav-link active">Currículo</a></li>
+        <li><a href="projetos-pessoais.html" class="nav-link">Projetos Pessoais</a></li>
+        <li><a href="certificados.html" class="nav-link">Certificados</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <h2>Currículo Profissional</h2>
-      <p><strong>Nome:</strong> Lorem Ipsum</p>
-      <p><strong>Formação:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p><strong>Experiência:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien in metus.</p>
-      <p><strong>Habilidades:</strong></p>
-      <ul>
-        <li>Lorem ipsum dolor</li>
-        <li>Consectetur adipiscing</li>
-        <li>Donec vel sapien</li>
+
+  <!-- Conteúdo principal começa aqui -->
+  <main class="container curriculo-container">
+    
+    <header class="page-header fade-in">
+      <h1>Currículo</h1>
+      <p class="page-subtitle">Uma visão geral do meu percurso e habilidades <br> No momento, estou trabalhando em acrescentar mais coisas, pois comecei neste ramo recentemente.</p>
+    </header>
+
+    <section class="section-curriculo fade-in">
+      <h2>Formação Acadêmica</h2>
+      <p>Cursando Análise e Desenvolvimento de sistemas na Universidade de Mogi das Cruzes.</p>
+    </section>
+
+    <section class="section-curriculo fade-in">
+      <h2>Experiência Profissional</h2>
+      <p>No momento, ainda não tive nenhuma experiência profissional, mas estou aberto a novas oportunidades de emprego, estágios e aprender novas habilidades me aprimorando.</p>
+    </section>
+
+    <section class="section-curriculo fade-in">
+      <h2>Habilidades</h2>
+      <ul class="habilidades-list">
+        <li>Python Básico</li>
+        <li>Básico sobre Redes e Segurança</li>
+        <li>Web Development (HTML, Javascript, CSS)</li>
+        <li>Banco de Dados (Sql e NoSql)</li>
       </ul>
     </section>
   </main>
+
   <footer>
-    <p>© 2025 Meu Nome</p>
+    <p>© 2025 Caio Loren. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

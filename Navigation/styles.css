@@ -1,0 +1,391 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;600&display=swap');
+
+/* Reset básico para margem e padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #faf6f0; /* bege claro */
+  color: #5a4631; /* marrom escuro */
+  line-height: 1.6;
+}
+
+/* Estilos básicos para títulos */
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  color: #7a6650;
+}
+
+/* Navbar fixa no topo */
+.navbar {
+  background: #d4c3b0;
+  box-shadow: 0 4px 10px rgba(163, 126, 104, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px; /* altura da navbar para ajustar o menu */
+  z-index: 1000;
+}
+
+/* Menu hambúrguer - inicialmente oculto */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 10px;
+  height: 24px;
+  user-select: none;
+}
+
+/* Barras do hambúrguer */
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #8a6a4f;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Lista de navegação padrão */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links de navegação */
+.nav-link {
+  color: #8a6a4f;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #c39982;
+  color: #fff;
+}
+
+/* Container padrão das páginas */
+.container {
+  max-width: 950px;
+  margin: 110px auto 110px auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+/* Intro principal */
+.intro {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(163, 126, 104, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #c39982;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #7a6650;
+}
+
+/* Botão principal */
+.btn-primary {
+  align-self: start;
+  background: #c39982;
+  box-shadow: 0 6px 10px rgba(195, 153, 130, 0.3);
+  padding: 0.85rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #5a4631;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    transform 0.2s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.btn-primary:hover {
+  background: #a67c52;
+  color: #fff;
+  transform: translateY(-5px);
+  border-radius: 50px;
+  padding: 0.85rem 1.75rem;
+}
+
+/* Links dentro dos projetos */
+.project-card a:not(.btn-primary) {
+  color: #8a6a4f;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    padding 0.3s ease, border-radius 0.3s ease;
+  padding: 0 0.2rem;
+  border-radius: 8px;
+}
+
+.project-card a:not(.btn-primary):hover {
+  color: #fff;
+  background-color: #a67c52;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+}
+
+/* Seções e cartões */
+.section-curriculo,
+.project-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(163, 126, 104, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.section-curriculo:hover,
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(163, 126, 104, 0.18);
+  color: #a67c52;
+}
+
+/* Lista de habilidades */
+.habilidades-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.habilidades-list li::before {
+  content: '✔';
+  margin-right: 10px;
+  color: #c39982;
+  font-weight: 700;
+}
+
+/* Rodapé fixo */
+footer {
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
+  color: #7a6650;
+  background: #faf6f0;
+  border-top: 1px solid #f0e6d8;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsividade padrão para telas menores */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 120px auto 130px auto;
+  }
+  .intro {
+    grid-column: auto;
+    text-align: center;
+  }
+  .btn-primary {
+    align-self: center;
+  }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 600px) {
+  /* Exibir menu hambúrguer */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Esconder menu tradicional */
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 88px; /* logo abaixo da navbar */
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    background: #d4c3b0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+  }
+
+  /* Menu ativo com classe .active */
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+  }
+
+  .nav-list li + li {
+    border-top: 1px solid #c5b79a;
+  }
+
+  .nav-link {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+}
+
+/* Espaçamento no menu hamburger */
+@media (max-width: 600px) {
+  .nav-list {
+    gap: 1rem;
+  }
+}
+
+/* Estilos exclusivos para a página certificados */
+.pagina-certificados .container {
+  max-width: 850px;
+  margin: 110px auto 110px auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.pagina-certificados .certificado-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 12px 30px rgba(163, 126, 104, 0.12);
+  cursor: default;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.pagina-certificados .certificado-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(163, 126, 104, 0.18);
+  color: #a67c52;
+}
+
+.pagina-certificados .certificado-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 6px 14px rgba(163, 126, 104, 0.2);
+  user-select: none;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.pagina-certificados .certificado-texto {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pagina-certificados .certificado-texto h3 {
+  font-weight: 700;
+  color: #7a6650;
+  margin: 0;
+}
+
+.pagina-certificados .certificado-texto p {
+  margin: 0;
+  color: #5a4631;
+  line-height: 1.4;
+}
+
+/* Responsividade dos cartões no mobile */
+@media (max-width: 900px) {
+  .pagina-certificados .container {
+    grid-template-columns: 1fr;
+  }
+  .pagina-certificados .certificado-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pagina-certificados .certificado-texto {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .pagina-certificados .certificado-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+/* Não está fazendo nada, descrição embaixo da imagem */
+.imagem-home {
+  display: inline-block;
+  text-align: center; /* para centralizar texto com a imagem */
+}
+
+.imagem-home img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imagem-desc {
+  font-size: 0.7rem;
+  color: #7a6650;
+  margin-top: 0.2rem;
+  font-style: italic;
+}
+/* Final descrição embaixo da imagem */
+
+/* Descrição na vertical, na borda direita da imagem da home */
+.imagem-container-vertical {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.imagem-container-vertical img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imagem-desc-vertical {
+  font-size: 0.7rem;
+  color: #7a6650;
+  font-style: italic;
+  writing-mode: sideways-lr; /* texto vertical da esquerda para direita */
+  transform: rotate(180deg); /* gira para leitura do topo para baixo */
+  user-select: none;
+}

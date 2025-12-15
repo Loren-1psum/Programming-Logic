@@ -3,27 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home - Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfólio - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Meu Portfólio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="curriculo.html">Currículo</a>
-      <a href="projetos-pessoais.html">Projetos Pessoais</a>
-      <a href="certificados.html">Certificados</a>
+    <nav class="navbar">
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="curriculo.html" class="nav-link">Currículo</a></li>
+        <li><a href="projetos-pessoais.html" class="nav-link">Projetos Pessoais</a></li>
+        <li><a href="certificados.html" class="nav-link">Certificados</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <h2>Bem-vindo ao meu portfólio</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aqui você encontrará informações sobre minha carreira, projetos e certificados.</p>
+
+  <main class="container fade-in">
+    <section class="intro">
+      <h1>Olá, eu sou <br> </n><span class="highlight">[Caio Loren]</span></h1>
+      <p class="subtitle">Desenvolvedor apaixonado por jogos, arte e criar soluções digitais inovadoras e funcionais.</p>
+      <a href="curriculo.html" class="btn-primary">Veja meu Currículo</a>
     </section>
+    <section>
+      <div class="imagem-container-vertical">
+        <img src="imagens/textura-bege-suave.jpg" alt="Imagem Placeholder" style="width:100%; border-radius:20px; user-select:none; pointer-events:none; " />
+        <span class="imagem-desc-vertical">Imagem placeholder, será substituida no futuro</span>
+      </div>
+    </section>
+
+    <!--
+    <section class="hero-image" aria-hidden="true">
+      <figure class="imagem-home">
+        <img src="imagens/textura-bege-suave.jpg" alt="Imagem Placeholder" style="width:100%; border-radius:20px; user-select:none; pointer-events:none; " />
+        <figcaption class="imagem-desc">Imagem placeholder, será substituida no futuro</figcaption>
+      </figure>
+    </section>
+    -->
+
+
   </main>
+
   <footer>
-    <p>© 2025 Meu Nome</p>
+    <p>© 2025 Caio Loren. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
