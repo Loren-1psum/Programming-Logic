@@ -23,7 +23,7 @@
         <section id="containerSection">
             <form action="atualizarNota.php" method="post">
                 <select name="curso" id="curso" class="estilo">
-                    <option value="ads">Analise e Desenvolvimento de Sistema</option>
+                    <option value="ads">Analisee Desenvolvimento de Sistema</option>
                     <option value="es">Engenharia de Software</option>
                     <option value="si">Sistema da Informação</option>
                     <option value="cc">Ciências da Computação</option>
@@ -65,7 +65,7 @@
                             $nomeCurso = $cursos[$curso];
                             echo "<h2 style='text-align:center'>$nomeCurso</h2>";
 
-                            echo "<form action='processaNota.php' method='post' id='form-nota'>
+                            echo "<form action='processaNota.php' id='form-nota'>
     <table>
         <thead>
             <tr>

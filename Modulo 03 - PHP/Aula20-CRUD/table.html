@@ -7,7 +7,6 @@
                 <th>Sobrenome</th>
                 <th>Nota Atividades</th>
                 <th>Nota Prova</th>
-                <th>Nota Final</th>
             </tr>
         </thead>
 
@@ -17,9 +16,8 @@
                 <td>{row['id']}</td>
                 <td>{row['nome']}</td>
                 <td>{row['sobrenome']}</td>
-                <td>{row['nota_atividade']}</td>
-                <td>{row['nota_prova']}</td>
-                <td>{row['nota_final']}</td>
+                <td><input type='number' name='nota_atividade[{$row['id']}]' required></td>
+                <td><input type='number' name='nota_prova[{$row['id']}]' required></td>
             </tr>
 
 
